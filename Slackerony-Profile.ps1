@@ -17,4 +17,4 @@ New-Alias -Name 'dig' -Value 'Resolve-DnsName'
 
 #Console Config
 Set-location -Path 'C:\Users\Jonathan\Documents\GitHub\'
-Start-SshAgent -Quiet@
+Start-SshAgent -Quiet
