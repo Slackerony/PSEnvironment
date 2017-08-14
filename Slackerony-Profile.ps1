@@ -10,7 +10,7 @@ Import-module -Name 'posh-git'
 Import-Module -Name 'posh-docker'
 
 #Custom Module Imports
-Import-Module -Name "..\WindowsAutomationScripts\Modules\PSFX\PSFX.psm1"
+Import-Module -Name "$PSScriptRoot\..\WindowsAutomationScripts\Modules\PSFX\PSFX.psm1"
 
 #Custom Aliases
 New-Alias -Name 'dig' -Value 'Resolve-DnsName'
