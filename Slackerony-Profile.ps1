@@ -1,8 +1,10 @@
 if (-not(Get-Module -ListAvailable -Name 'posh-git') -or
-    -not(Get-Module -ListAvailable -Name 'posh-docker'))
+    -not(Get-Module -ListAvailable -Name 'posh-docker') -or
+    -not(Get-Module -ListAvailable -Name 'ntfssecurity'))
 {
     Install-Module -Name 'posh-git' -Force -Scope CurrentUser
     Install-Module -Name 'posh-docker' -Force -Scope CurrentUser
+    Install-Module -Name 'ntfssecurity' -Force -Scope CurrentUser
 }
 
 #Module Imports
