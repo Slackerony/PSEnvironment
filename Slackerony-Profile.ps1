@@ -13,4 +13,5 @@ New-Alias -Name 'dig' -Value 'Resolve-DnsName'
 
 #Console Config
 Set-location -Path "$($ENV:USERPROFILE)\git"
+#Add-SshKey "$($ENV:USERPROFILE)\.ssh\id_rsa" --Run if this is a new computer, maybe.
 Start-SshAgent -Quiet
