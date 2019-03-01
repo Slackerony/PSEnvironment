@@ -6,8 +6,6 @@ if (-not(Get-Module -ListAvailable -Name 'posh-git'))
 #Module Imports
 Import-module -Name 'posh-git'
 
-#Custom Module Imports
-
 #Custom Aliases
 New-Alias -Name 'dig' -Value 'Resolve-DnsName'
 
@@ -15,3 +13,6 @@ New-Alias -Name 'dig' -Value 'Resolve-DnsName'
 Set-location -Path "$($ENV:USERPROFILE)\git"
 #Add-SshKey "$($ENV:USERPROFILE)\.ssh\id_rsa" --Run if this is a new computer, maybe.
 Start-SshAgent -Quiet
+
+#PSReadLine changes
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
